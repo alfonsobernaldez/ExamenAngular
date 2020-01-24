@@ -1,27 +1,9 @@
-<table class="table">
-    <thead class="thead-dark">
-        <tr>
-            <th scope="col">data</th>
-            <th scope="col">id</th>
-            <th scope="col">employee_name</th>
-            <th scope="col">employee_salary</th>
-            <th scope="col">employee_age</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let persona of status.data">
-            <!--FALLA AQUI-->
-            <td> {{persona.data}} </td>
-            <td> {{persona.id}} </td>
-            <td> {{persona.employee_name}} </td>
-            <td> {{persona.employee_salary}} </td>
-            <td> {{persona.employee_age}} </td>
-        </tr>
-    </tbody>
-</table>
-<button (click)="verListadoCompleto()">Ver Listado Completo</button>
+<router-outlet>
 
 
 
-
-<router-outlet></router-outlet>
+</router-outlet>
+<button (click)="irJson()">Listado Empleados</button>
+<button (click)="irMadrid()">Madrid</button>
+<button (click)="irToledo()">Toledo</button>
+<button (click)="irConsulta()">Consulta Sueldo de 1 empleado</button>

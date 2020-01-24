@@ -7,7 +7,7 @@ import { ConsultaComponentComponent } from './consulta-component/consulta-compon
 import { ListadoComponentComponent } from './listado-component/listado-component.component';
 import { ToledoComponentComponent } from './toledo-component/toledo-component.component';
 import { MadridComponentComponent } from './madrid-component/madrid-component.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -24,7 +24,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ReactiveFormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
