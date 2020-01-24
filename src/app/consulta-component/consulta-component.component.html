@@ -1,4 +1,5 @@
 <form (submit)="submit()" #formulario="ngForm" placholder="Introduzca el numero de empleado">
-    <label for="empleado">Empleado</label>
-    <input type="text" name="empleado" id="empleado" required [(ngModel)]="empleados" #empleado="ngModel">
+    <label for="empleado">Empleado:  </label>
+    <input type="text" name="empleado" id="empleado" required [(ngModel)]="empleados.id" #empleado="ngModel">
+    <button>Enviar</button>
 </form>

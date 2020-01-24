@@ -26,11 +26,11 @@ export class ListadoComponentComponent implements OnInit {
 
   verListadoCompleto() {
 
-    this.stat.getListadoCompleto().subscribe(status => {this.status = status;});
+    this.stat.getListadoCompleto().subscribe(status => {this.status = status; });
 
   }
   verEmpleadoUnico() {
-    this.stat.getUnicoEmpleado(this.idEmpleado).subscribe(status => {this.d = status; this.calculo = (this.d[0].employee_salary) });
+    this.stat.getUnicoEmpleado(this.idEmpleado).subscribe(status => {this.d = status; this.calculo = (this.d[3].employee_salary) });
   }
 
   ngOnInit() {
