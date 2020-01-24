@@ -6,6 +6,8 @@ import { ListadoComponentComponent } from './listado-component/listado-component
 import { ConsultaComponentComponent } from './consulta-component/consulta-component.component';
 
 const routes: Routes = [{
+
+  //RUTAS ENTRE LOS DIFERENTES APARTADOS DE LA APLICACION
   path: 'Madrid',
   component: MadridComponentComponent
 

@@ -7,16 +7,21 @@ import { Status } from '../Interfaces/status';
   providedIn: 'root'
 })
 export class DatosService {
+  path: string;
 
-  constructor(private http: HttpClient) { }
+//CONEXIONES NECESARIAS CON EL LINK DE LA API
+  constructor(private http: HttpClient) {
+    this.path = 'http://dummy.restapiexample.com/api/v1/employees'
+  }
 
   getListadoCompleto() {
 
     const path = 'http://dummy.restapiexample.com/api/v1/employees';
     return this.http.get <Status>(path);
   }
-  getUnicoEmpleado(id: string){
-    const path = 'http://dummy.restapiexample.com/api/v1/employee/2';
-    return this.http.get<Status>(path);
+  getUnicoEmpleado(id: string) {
+
+    const path = 'http://dummy.restapiexample.com/api/v1/employees' + id;
+    return this.http.get<Empleados>(path);
   }
 }

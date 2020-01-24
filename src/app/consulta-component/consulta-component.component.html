@@ -1,5 +1,6 @@
-<form (submit)="submit()" #formulario="ngForm" placholder="Introduzca el numero de empleado">
+<form (submit)="verEmpleadoUnico()" #formulario="ngForm" placholder="Introduzca el numero de empleado">
     <label for="empleado">Empleado:  </label>
     <input type="text" name="empleado" id="empleado" required [(ngModel)]="empleados.id" #empleado="ngModel">
     <button>Enviar</button>
 </form>
+<!--FORMULARIO PARA ENVIAR UN ID Y QUE DEVUELVE EL EMPLEADO DE ESE ID-->

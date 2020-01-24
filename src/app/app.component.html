@@ -1,9 +1,13 @@
-<router-outlet>
-
-
-
-</router-outlet>
-<button (click)="irJson()">Listado Empleados</button>
-<button (click)="irMadrid()">Madrid</button>
-<button (click)="irToledo()">Toledo</button>
-<button (click)="irConsulta()">Consulta Sueldo de 1 empleado</button>
+<router-outlet></router-outlet>
+<!--BOTONES PARA NAVEGAR ENTRE LAS DIFERENTES RUTAS-->
+<div class="fondo">
+    <div class="main">
+        <h1>¡Bienvenido al Examen de Angular!</h1>
+    </div>
+    <div class="botones">
+        <button (click)="irJson()" class="btn btn-primary btn-lg">Listado Empleados</button>
+        <button (click)="irMadrid()" class="btn btn-primary btn-lg">Madrid</button>
+        <button (click)="irToledo()" class="btn btn-primary btn-lg">Toledo</button>
+        <button (click)="irConsulta()" class="btn btn-primary btn-lg">Consulta Sueldo de 1 empleado</button>
+    </div>
+</div>

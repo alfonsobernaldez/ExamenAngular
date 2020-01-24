@@ -14,7 +14,7 @@ export class ListadoComponentComponent implements OnInit {
   dato = null;
   idEmpleado: string;
   datEmpleado: string;
-  d: Status = {status: '', data: {id: '1', employee_name: '', employee_salary: '', employee_age: '', profile_image: ''}};
+  d: Status = {status: '', data: {id: '', employee_name: '', employee_salary: '', employee_age: '', profile_image: ''}};
 
   constructor(private stat: DatosService) {
     this.datEmpleado = '';
@@ -24,15 +24,11 @@ export class ListadoComponentComponent implements OnInit {
     return this.calculo;
   }
 
-  verListadoCompleto() {
+  verListadoCompleto() { //CONSULTA DE TODA LA API
 
     this.stat.getListadoCompleto().subscribe(status => {this.status = status; });
 
   }
-  verEmpleadoUnico() {
-    this.stat.getUnicoEmpleado(this.idEmpleado).subscribe(status => {this.d = status; this.calculo = (this.d[3].employee_salary) });
-  }
-
   ngOnInit() {
   }
 

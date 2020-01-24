@@ -12,7 +12,7 @@ export class AppComponent {
   constructor( private router: Router) { }
 
 
-
+//FUNCION PARA PODER ACTIVAR LOS BOTONES Y NAVEGAR ENTRE DIRECTORIOS
   irMadrid() {
 
     this.router.navigate(['Madrid']);
